@@ -35,7 +35,9 @@ player.advanced();
 player.play();
 
 class ChatComponent extends HTMLElement {
-  render() {
+  constructor() {
+    super();
+
     this.innerHTML = `
         <div class="main-wrapper">
         <div class="chat-title">Чат</div>
@@ -52,13 +54,6 @@ class ChatComponent extends HTMLElement {
         </div>
       </div>
       `;
-  }
-
-  connectedCallback() {
-    if (!this.rendered) {
-      this.render();
-      this.rendered = true;
-    }
   }
 }
 
