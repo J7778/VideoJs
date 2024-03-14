@@ -530,9 +530,7 @@ button {
   margin: 3%;
   border-radius: 0 8px 8px 8px;
   background-color: #ffffff;
-}
-
-.item p {
+  word-wrap: break-word;
 }
 
 .chat-title {
